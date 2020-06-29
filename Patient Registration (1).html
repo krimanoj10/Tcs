@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hospital Management</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <i class="icofont-clock-time"></i> Monday - Saturday, 8AM to 10PM
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="icofont-phone"></i> Call us now +1 5589 55488 55
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+       <h1 class="logo mr-auto"><a href="index.html">MEDICITY</a></h1> 
+        <nav class="nav-menu d-none d-lg-block">
+        <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="drop-down"><a href="index.html">Patient</a>
+            <ul>
+                <li><a href="Patient Registration.html">Create </a></li>
+                <li><a href="Update Registration.html">update</a></li>
+                <li><a href="Delete Patient.html">Delete</a></li>
+                </ul>
+        </li>
+        <li class="drop-down"><a href="">Pharmacy</a>
+            <ul>
+                <li><a href="#">Create </a></li>
+                <li><a href="#">update</a></li>
+                <li><a href="#">Delete</a></li>
+            </ul>
+        </li>
+        <li class="drop-down"><a href="">Diagnostics</a>
+            <ul>
+                <li><a href="#">Create </a></li>
+                <li><a href="#">update</a></li>
+                <li><a href="#">Delete</a></li>
+            </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav><!-- .nav-menu -->
+    </div>
+    </header><!-- End Header -->
+    <br>
+    <br>
+    
+    <section id="Patient_Registration">
+    <div class="container" >
+    <div class="section-title"><h2><br>Patient Registration</h2></div>
+    </div>   
+    <div class="Patient-Registration-form" id="Registration-form">
+    <center>
+      <form method="post" role="form" class="Patient-Registration-form">
+        <div class="form-row-1">
+          <div class="col-md-4 form-group">
+            <input type="number" name="Patient SSN ID" class="form-control" id="Patient SSN ID" placeholder="Patient SSN ID" >
+            </div>
+        </div>
+        <div class="form-row-2">
+          <div class="col-md-4 form-group">
+            <input type="text" class="form-control" name="Patient Name" id="Patient Name" placeholder="Patient Name" data-rule="minlen:4" data-msg="Please enter atleast 4 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-row-3">
+          <div class="col-md-4 form-group">
+            <input type="number" class="form-control" name="Age" id="Age" placeholder="Age" >
+            </div>
+        </div>
+        <div class="form-row-4">
+          <div class="col-md-4 form-group">
+            <input type="datetime" name="Date of Admission" class="form-control datepicker" id="Date of Admission" placeholder="Date of Admission" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-row-5">
+          <div class="col-md-4 form-group">
+            <select name="Type of Bed" id="Type of Bed" class="form-control">
+              <option value="">Select Type of Bed</option>
+              <option value="General Ward">General Ward</option>
+              <option value="Semi Sharing">Semi Sharing</option>
+              <option value="Single room">Single room</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-row-6">
+          <div class="col-md-4 form-group">
+            <input type="text" class="form-control" name="Address" id="Address" placeholder="Address" data-rule="minlen:4" data-msg="Please enter atleast 4 chars">
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-row-7">
+          <div class="col-md-4 form-group">
+            <select name="State" id="State" class="form-control">
+              <option value="">Select State</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+              <option value="Daman and Diu">Daman and Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+            <div class="validate"></div>
+          </div>
+        </div>
+        <div class="form-row-8">
+           <div class="col-md-4 form-group">
+              <input type="text" class="form-control" name="City" id="City" placeholder="City" data-rule="minlen:4" data-msg="Please enter atleast 4 chars">
+              <div class="validate"></div>
+            </div>
+        </div>
+        <div class="mb-3">
+          <!--<div class="loading">Loading</div>
+          <div class="error-message">Unable to create patient</div>
+          <div class="sent-message">Patient creation initated successfully!!</div>-->
+        </div>
+        <div class="text-center"><button type="submit">create</button></div>
+    </center>
+    </div>
+      </form>
+    </div>
+</div>
+</section>
+
+    
+        
+    </body>
+ </html>
